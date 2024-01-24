@@ -1,4 +1,4 @@
 
-Node run options
-    node run start
-    node run download
+npm  run
+    - start - server/server.js
+    - download - poster-downloader.js
