@@ -9,15 +9,15 @@ fetch(`https://api-ghibli.herokuapp.com/films`)
   films.forEach(film => {
       let imageUrl  = `${film.movie_banner}`;
       let imageLoad = `download/${film.title}.jpeg`;
+      let ext = path.extname(imageLoad);
       async function downloadImage(url, filename) {
         const response = await axios.get(url, { responseType: 'arraybuffer' });
 
         fs.writeFile(filename, response.data, (err) => {
           if (err) throw err;
-          console.log('successfully!', [filename, imageUrl]);
+          console.log('successfully!', [filename, imageUrl],ext);
         });
       }
       downloadImage(imageUrl, imageLoad);
-
     });
   })
