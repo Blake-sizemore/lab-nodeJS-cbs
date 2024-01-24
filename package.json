@@ -1,0 +1,15 @@
+{
+  "name": "lab-nodejs-cbs",
+  "version": "1.0.0",
+  "description": "C:_Users_magni_Documents_Source_covalance-master_5-backend-javascript-dev_NodeJS_lab-nodejs-cbs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server/server.js"
+  },
+  "author": "CBS",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.6.5"
+  }
+}
